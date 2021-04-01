@@ -1,0 +1,358 @@
+<!--
+    Copyright 2021 yenten.ru contributors
+    Check COPYING file for license or <https://www.gnu.org/licenses/agpl-3.0.txt>.
+  -->
+
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Yenten [YTN] &mdash; криптовалюта для CPU</title>
+        <meta name="description" content="Yenten Coin - криптовалюта, майнинг на процессоре, курс к рублю" />
+        <meta name="keywords" content="yenten bitcoin coin криптовалюта курс майнинг процессорный" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link href="assets/styles/yenten.css" rel="stylesheet"  />
+        <link href="assets/vendor/jquery-ui/jquery-ui.min.css" rel="stylesheet"  />
+        <link href="assets/vendor/bootstrap.css" rel="stylesheet"  />
+    </head>
+    
+    <body>
+        <nav class="shadow navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="assets/images/logo/logo.png" alt="YenTen" class="logo" />
+                    YENTEN
+                </a>
+            </div>
+        </nav>
+        
+        <main class="pt-5 container">
+            <section id="sHero" class="row flex-column-reverse flex-md-row">
+                <div id="sdInfo" class="col-md-8">
+                    <h1>Yenten Coin</h1>
+                    <h2>&mdash; криптовалюта для всех.</h2>
+                    <p>
+                        Быстрые транзакции, простота использования, майнинг только на CPU.
+                        Знакомы с Bitcoin Gold? Yenten это тоже самое, только порог входа для майнинга ниже.
+                    </p>
+                </div>
+                <div id="sdChan" class="col-md-4 text-center">
+                    <img src="assets/images/00-00.png" alt="YenTen-chan" class="shadow border border-4 border-secondary rounded-circle" />
+                </div>
+            </section>
+            
+            <section id="sJoinNow" class="my-5">
+                <h2><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/271/rocket_1f680.png" class="emoji" /> Присоедениться</h2>
+                <hr/>
+                
+                <p>
+                    Для начала использования нужно всего лишь выбрать программу-кошелёк и установить её.
+                </p>
+                
+                <div class="row mb-5">
+                    <div class="col-md-4 text-center">
+                        <img src="assets/images/screenshots/core.jpeg" alt="Скриншот Yenten Core" class="shadow m-3" />
+                    </div>
+                    <div class="col-md-8">
+                        <h3>Yenten Core</h3>
+                        <p>
+                            Свободный кошелёк Yenten с открытым исходным кодом.<br/>
+                            Поддерживает Windows, Mac OS и можно скомпилировать под большинство дистрибутивов Linux.<br/>
+                            <br/>
+                            
+                            Предоставляет полный контроль над средствами, ключ к кошельку и блокчейн хранится у вас на диске.
+                            Для быстрого старта рекомендуется предварительно скачать кусок блокчейна <a href="https://github.com/yentencoin/yenten/releases/download/4.0.1/bootstrap_yenten4_2021.zip">отсюда</a>.
+                        </p>
+                        
+                        <a href="https://github.com/yentencoin/yenten/releases/download/4.0.2/yenten-4.0.2-win64.zip" type="button" class="btn btn-primary mb-2">Скачать для Windows (x64)</a>
+                        <a href="https://github.com/yentencoin/yenten/releases/download/4.0.2/yenten-4.0.2-win32.zip" type="button" class="btn btn-primary mb-2">Скачать для Windows (x32)</a>
+                        <a href="https://github.com/yentencoin/yenten/releases/download/4.0.1/Yenten-Core-4.0.1.dmg" type="button" class="btn btn-dark mb-2">Скачать для Mac OS X</a>
+                        <a href="https://github.com/yentencoin/yenten/archive/4.0.2.zip" type="button" class="btn btn-secondary mb-2">Скачать исходники</a>
+                        <br/>
+                        
+                        <a href="javascript:d('HowToCore')" type="button" class="btn btn-secondary">Гайд по использованию</a>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3>Yenten Navigator</h3>
+                        <p>
+                            Проприетарный кошелёк, работающий в браузерах без JavaScript.<br/>
+                            Поддерживает любую ОС, на которую можно установить браузер. Открывается через Tor и I2P.<br/>
+                            <br/>
+                            
+                            Ключ к кошельку и блокчейн хранится у третьей стороны. Надёжность вашего кошелька зависит от добросовестности операторов кошелька.
+                        </p>
+                        
+                        <a href="javascript:false" type="button" class="btn btn-primary mb-2" disabled>Зарегистрироваться</a>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        
+                    </div>
+                </div>
+            </section>
+            
+            <section id="sMineNow" class="mb-5">
+                <h2><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/271/pick_26cf-fe0f.png" class="emoji" /> Майнинг</h2>
+                <hr/>
+                
+                <p>Всё очень просто: выбирайте себе ПО для майнинга и начинайте.</p>
+                
+                <div class="row mb-5">
+                    <div class="col-md-4 text-center">
+                        <img src="assets/images/screenshots/qtminer.jpeg" alt="Скриншот Yenten GUI Miner" class="shadow m-3" />
+                    </div>
+                    <div class="col-md-8">
+                        <h3>Yenten GUI Miner</h3>
+                        <p>
+                            Удобный, легковесный, ориентированный на новичков, приятный майнер для Windows.
+                        </p>
+                        
+                        <a href="https://github.com/yentencoin/ytn-gui-cpuminer/releases/download/v0.7.2/gui_miner_qt_full-07-2.zip" type="button" class="btn btn-primary mb-2">Скачать для Windows (x64)</a>
+                        <br/>
+                        
+                        <a href="javascript:d('HowToGUIMiner')" type="button" class="btn btn-secondary">Гайд по использованию</a>
+                    </div>
+                </div>
+                
+                <div class="row flex-column-reverse flex-md-row">
+                    <div class="col-md-8">
+                        <h3>CPUMiner</h3>
+                        <p>
+                            Кроссплатформенный майнер с открытым исходным кодом без графического интерфейса.
+                        </p>
+                        
+                        <a href="https://github.com/bubasik/cpuminer-opt-yespower/releases/download/3.8.8.4/Cpuminer-opt-yespower-ytn-ver3.zip" type="button" class="btn btn-primary mb-2">Скачать для Windows (x64)</a>
+                        <a href="https://github.com/bubasik/cpuminer-opt-yespower/archive/3.8.8.4.tar.gz" type="button" class="btn btn-secondary mb-2">Скачать исходники</a>
+                        <br/>
+                        
+                        <a href="javascript:d('HowToCLIMiner')" type="button" class="btn btn-secondary">Гайд по использованию</a>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img style="max-width: 80vw;" src="assets/images/screenshots/climiner.jpeg" alt="Скриншот CPUMiner" class="shadow m-3" />
+                    </div>
+                </div>
+            </section>
+            
+            <section id="sFaucets" class="mb-5">
+                <h2><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/271/potable-water_1f6b0.png" class="emoji" /> Краны</h2>
+                <hr/>
+                
+                <p>
+                    Если майнинг вам не по душе или же вы хотите получить немного yenten просто так, то вы можете воспользоваться кранами.<br/>
+                    Поскольку Yenten молодая валюта, краны предоставляют yenten на безвозмездной основе. Получить можно от 0.01 до 0.1 YTN.
+                    Большинство кранов имеют адрес для пожертвования, на который можно сбросить свои YTN для пополнения "призового фонда".
+                </p>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Yenten-pool.info Faucet</h3>
+                        <p>
+                            Вводите свой адрес, проходите рекапчу, нажимаете на Submit, смотрите рекламу и снова на Submit.<br/>
+                            <b>Важно:</b> отключите AdBlock перед попыткой использовать этот кран.
+                        </p>
+                        
+                        <a href="http://yenten-pool.info/faucet/" type="button" class="btn btn-secondary mb-2">Перейти</a>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Shiganai Faucet</h3>
+                        <p>
+                            Внизу страницы проходите рекапчу, вводите свой адрес в 円天アドレス и нажимаете Enter.<br/>
+                            <b>Важно:</b> отключите AdBlock перед попыткой использовать этот кран.
+                        </p>
+                        
+                        <a href="http://shiganaiyenten.chocottokozukai.click/" type="button" class="btn btn-secondary mb-2">Перейти</a>
+                        <a href="javascript:d('HowToShiganai')" type="button" class="btn btn-secondary mb-2">Гайд</a>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="sExchange" class="mb-5">
+                <h2><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/271/pound-banknote_1f4b7.png" class="emoji" /> Обмен</h2>
+                <hr/>
+                
+                <p>Если вы захотите обменять свои yenten coins, то вам пригодятся эти ссылки на поддерживаемые биржи:</p>
+                <ul>
+                    <li><a href="https://trade.multicoins.org/market/MC-YNTN">MultiCoins</a></li>
+                    <li><a href="https://crex24.com/ru/exchange/YTN-BTC">Crex24</a></li>
+                </ul>
+            </section>
+            
+            <section id="sTechInfo" class="mb-5">
+                <h2><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/271/gear_2699-fe0f.png" class="emoji" /> Техническая информация</h2>
+                <hr/>
+                
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <td>Обозначение валюты</td>
+                            <td>YTN</td>
+                        </tr>
+                        <tr>
+                            <td>Дата появления</td>
+                            <td>28 октября 2017</td>
+                        </tr>
+                        <tr>
+                            <td>Алгоритм</td>
+                            <td>YespowerR16</td>
+                        </tr>
+                        <tr>
+                            <td>Время блока</td>
+                            <td>2 минуты</td>
+                        </tr>
+                        <tr>
+                            <td>Размер блока</td>
+                            <td>2М</td>
+                        </tr>
+                        <tr>
+                            <td>Награда за первый блок</td>
+                            <td>50 YTN</td>
+                        </tr>
+                        <tr>
+                            <td>Максимальное количество YTN</td>
+                            <td>84 миллиона</td>
+                        </tr>
+                        <tr>
+                            <td>Уменьшение награды раз в</td>
+                            <td>800 тысяч блоков</td>
+                        </tr>
+                        <tr>
+                            <td>Пересчёт сложности</td>
+                            <td>После каждого блока, DarkGravityWave v3-1</td>
+                        </tr>
+                        <tr>
+                            <td>Премайнинг</td>
+                            <td>НЕТ</td>
+                        </tr>
+                        <tr>
+                            <td>P2P порт</td>
+                            <td>9981</td>
+                        </tr>
+                        <tr>
+                            <td>RPC порт</td>
+                            <td>9982</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <section id="sFAQ">
+                <h2><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/271/information_2139-fe0f.png" class="emoji" /> Часто задаваемые вопросы</h2>
+                <hr/>
+                
+                <h3>Так а всё-таки, что это такое?</h3>
+                <p>
+                    Yenten &mdash; созданная в 2017 году криптовалюта.
+                    Это относительно новый вид денег, который позволяет обмениваться средствами быстро, с низкими комиссиями и с минимальными ограничениями.
+                    Счёт Yenten может открыть каждый желающий бесплатно и в любое время.
+                </p>
+                
+                <h3>А в чём принципиальное отличие от других криптовалют?</h3>
+                <p>
+                    Большинство криптовалют добываются при помощи GPU или ASIC. Конечно, можно использовать для таких целей и процессор, но это будет ужасно медленно.
+                    С Yenten всё наоборот: майнить на процессоре быстрее чем на GPU/ASIC. Присоедениться к сообществу майнеров теперь можно не покупая дорогостоящие видеокарты &mdash;
+                    среднемощного процессора хватит (а высокомощных и так ни у кого нет). Цель существования Yenten заключается в предоставлении возможности среднестатистическому человеку
+                    "вкатиться" в криптомир и начать майнить как можно быстрее.
+                </p>
+            </section>
+        </main>
+        
+        <footer class="bg-light text-secondary p-5 mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            <strong>yenten.ru</strong> &mdash; веб-сайт про криптовалюту Yenten Coin.<br/>
+                            Обновляется реже чем официальный сайт. Пожалуйста, посетите официальный сайт, если нужна актуальная информация.
+                        </p>
+                        
+                        <p style="word-break: break-all;">
+                            <strong>Donate:</strong> YasoNDqEedFjN14dEVM8kCUscb7Q88yNFT<br/>
+                            <img src="assets/images/yenten-accepted.png" />
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        &copy; Yenten 2017-2021
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <div id="dialogs">
+            <div id="HowToCore" title="Как настроить Yenten Core">
+                <ol>
+                    <li>Скачиваем кошелёк</li>
+                    <li>Скачиваем бутстрап блокчейна</li>
+                    <li>Распаковываем кошелёк</li>
+                    <li>Запускаем кошелёк, выбираем папку, в которую кошелёк распакован</li>
+                    <li>Выходим из кошелька</li>
+                    <li>Распаковываем бутстрап блокчейна в папку с кошельком</li>
+                    <li>Запускаем кошелёк</li>
+                    <li>Не паникуем, через 15 минут оно присосётся к сети и начнёт синхронизацию</li>
+                    <li>Ждём 30 минут</li>
+                    <li>Пользуемся как обычным кошельком биткоин</li>
+                </ol>
+            </div>
+            
+            <div id="HowToGUIMiner" title="Как настроить Yenten GUI Miner">
+                <ol>
+                    <li>Скачиваем майнер</li>
+                    <li>Распаковываем майнер</li>
+                    <li>Запускаем cpuminer-qt.exe</li>
+                    <li>В Threads выбираем нужное количество потоков (оптимальное кол-во соответствует кол-ву ядер)</li>
+                    <li>В Wallet address пишем свой адрес кошелька</li>
+                    <li>В Select pool выбираем "[Yenten] yenten-pool.info"</li>
+                    <li>Запускаем майнинг нажатием кнопки Start Mining</li>
+                    <li>Ждём 1 минуту</li>
+                    <li>Майнинг пошёл</li>
+                </ol>
+            </div>
+            
+            <div id="HowToCLIMiner" title="Как настроить CPUMiner">
+                <ol>
+                    <li>Скачиваем майнер</li>
+                    <li>Распаковываем майнер</li>
+                    <li>Создаём файл start_mining.cmd</li>
+                    <li>В файл пишем cpuminer -a yespowerr16 -o stratum+tcp://yenten-pool.info:63368 -u WALLET.NAME</li>
+                    <li>Вместо WALLET - адрес вашего кошелька, вместо NAME - ID машины для майнинга</li>
+                    <li>Запускаем start_mining.cmd</li>
+                    <li>Ждём 1 минуту</li>
+                    <li>Майнинг пошёл</li>
+                </ol>
+                
+                <strong>Pro tips:</strong>
+                <ol>
+                    <li>Для более удобной работы на Linux, можно использовать утилиты screen и cpulimit</li>
+                </ol>
+            </div>
+            
+            <div id="HowToShiganai" title="Как доить Shiganai Faucet" class="text-center">
+                <iframe width="400" height="240" src="https://www.youtube.com/embed/vPrqnLsBlug" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope" allowfullscreen></iframe>
+            </div>
+            
+            <div id="forbidden" title="Нельзя">
+                нельзя.
+            </div>
+        </div>
+        
+        <script src="assets/vendor/juqery.js"></script>
+        <script src="assets/vendor/jquery-ui/jquery-ui.min.js"></script>
+        <script>
+            function d(id) {
+                $("#" + id).dialog({
+                    modal: true,
+                    width: 950,
+                    height: 420,
+                    buttons: {
+                        "Понятно": function() {
+                            $(this).dialog("close");
+                        }
+                    }
+                });
+            }
+        </script>
+    </body>
+</html>

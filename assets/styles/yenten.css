@@ -1,0 +1,29 @@
+/*
+ * Copyright 2021 yenten.ru contributors
+ * Check ../../COPYING file for license or <https://www.gnu.org/licenses/agpl-3.0.txt>.
+ */
+
+img.logo {
+    max-width: 36px;
+}
+
+#sdInfo h1 {
+    color: #36c5fa;
+}
+
+#sdInfo h2 {
+    color: #827795;
+}
+
+#sdChan img {
+    width: 90vw;
+    max-width: 256px;
+}
+
+.emoji {
+    max-height: 32px;
+}
+
+#dialogs > div {
+    display: none;
+}
